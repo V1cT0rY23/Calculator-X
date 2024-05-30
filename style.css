@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  border: 1px solid rd;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-direction: column;
+  gap: 100px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 40px;
+  background-color: rgb(108, 107, 107);
+  box-shadow: 1px 1px 5px 1px orangered;
+}
+input {
+  width: 350px;
+  height: 70px;
+  background-color: rgb(39, 39, 39);
+  margin-bottom: 15px;
+  border-radius: inherit;
+  padding: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: snow;
+  font-size: 2rem;
+  font-weight: 700;
+   box-shadow:  1px 5px -1px black ;
+   
+
+}
+.section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(39, 39, 39);
+  border-radius: inherit;
+  box-shadow: inset 1px 1px 5px   black;
+}
+.section > div {
+  height: 50px;
+  width: 70px;
+  background-color: snow;
+  border-radius: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 1px 1px 5px 2px black;
+  transition-duration: 0.3s;
+}
+#reset {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    background-color: gray;
+}
+#equals {
+    grid-column-start: 3;
+    width: 100%;
+    grid-column-end: 5;
+    background-color: orangered;
+}
+.section > div:hover {
+    background-color: orangered;
+    color: snow;
+    border-radius: 10px;
+}
+
+
+div:after {
+    background-color: black;
+}
+
+html.dark {
+    --primary-color: #333;
+    --text-color: black;
+    --orange: rgb(224, 148, 8);
+}
+html.light {
+    --primary-color: #d7d7d7;
+    --text-color: black;
+    --orange: rgb(227, 169, 61);
+} 
+button {
+    border: none;
+    background: var(--orange);
+    padding: 20px;
+    cursor: pointer;
+    color: var(--text-color);
+    border-radius: 10px;
+}
