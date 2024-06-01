@@ -7,13 +7,7 @@ const display= (val) => {
 }
 
 const reset = () => {
-    input.value="";
-    const speak = () => {
-        input.value;
-        const utterance = new SpeechSynthesisUtterance(`reset display`);
-        window.speechSynthesis.speak(utterance);
-      }
-      speak()
+    input.value="";
 }
 
 const execute = () => {
@@ -24,14 +18,7 @@ const execute = () => {
 }
 const del = () => {
     input.value=input.value.substr(0,input.value.length-1);
-}
-
-const speak = () => {
-    input.value;
-    const utterance = new SpeechSynthesisUtterance(`baba dont touch my face`);
-    window.speechSynthesis.speak(utterance);
-  }
-  speak()
+}
 
 const htmlElem = document.querySelector("html")
 const themeButton = document.getElementById("theme-toggle")
